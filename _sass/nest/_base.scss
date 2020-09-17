@@ -1,0 +1,25 @@
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.svg-icon {
+  width: 22px;
+  height: 16px;
+  display: inline-block;
+  fill: #{$grey-color};
+  padding-right: 5px;
+  vertical-align: text-top;
+}
+
+a {
+  .social-media-list &:hover {
+    text-decoration: none;
+  }
+}

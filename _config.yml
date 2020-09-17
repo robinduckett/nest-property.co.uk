@@ -1,0 +1,10 @@
+title: Nest Lettings & Property Management Ltd
+tagline: Property Management, Property Maintaince, EPC's, Gas Safety and more
+facebook_username: nestlettingsltd
+instagram_username: nestlettings
+
+markdown: kramdown
+
+exclude:
+  - lambda
+  - wp

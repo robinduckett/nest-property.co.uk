@@ -1,0 +1,71 @@
+<div class="nav-vis">
+  <div class="logo">
+    <a href="/">
+      <img src="/assets/img/logo.png" alt="{{ site.title }}" />
+    </a>
+  </div>
+
+  <div class="mobile" onclick="showNavbar()">
+    <i class="fa fa-bars"></i>
+  </div>
+</div>
+
+<ul class="navbar">
+  <li>
+    <a href="/">Home</a>
+  </li>
+  <li>
+    <span>Tenant <i class="fa fa-chevron-down"></i></span>
+
+    <ul class="subnavbar">
+      <li><a href="/tenant-information">Tenant Information</a></li>
+      <li><a href="/tenant-application-form">Tenant Application Form</a></li>
+      <li><a href="/guarantor-application">Guarantor Application Form</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="/landlords">Landlords</a>
+  </li>
+  <li>
+    <span>Services <i class="fa fa-chevron-down"></i></span>
+
+    <ul class="subnavbar">
+      <li><a href="/property-maintenance">Property Maintenance</a></li>
+      <li>
+        <a href="/epcs-and-safety-certificates"
+          >EPC’s & Gas Safety Certificates</a
+        >
+      </li>
+      <li><a href="/property-management">Property Management</a></li>
+      <li><a href="/airbnb-management">AirBnB Management</a></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="cta">
+  <i class="fa fa-mobile"></i>
+
+  <p>
+    CALL US NOW<br />
+    07553 101577<br />
+    07496 783333<br />
+    <a href="mailto:lindsey@nest-property.co.uk">lindsey@nest-property.co.uk</a>
+    <a href="mailto:beth@nest-property.co.uk">beth@nest-property.co.uk</a>
+  </p>
+</div>
+
+<script>
+  let shown = false;
+
+  function showNavbar() {
+    const navbar = document.querySelector("nav");
+
+    shown = !shown;
+
+    if (shown) {
+      navbar.classList.add("shown");
+    } else {
+      navbar.classList.remove("shown");
+    }
+  }
+</script>

@@ -1,0 +1,262 @@
+h1#nest-services {
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+
+  & + p {
+    text-align: center;
+    font-size: 16pt;
+    color: #fff;
+  }
+}
+
+#testimonials {
+  background: url('/assets/img/testimonials/background.jpg') fixed;
+  background-position: 50% 0px;
+  background-size: cover;
+
+  @include media-query-lt(1024px) {
+    height: 570px;
+  }
+
+  .inner {
+    background: rgba(255, 255, 255, 0.8);
+
+    @include media-query-lt(1024px) {
+      margin-left: 50%;
+      height: 570px;
+      overflow: hidden;
+    }
+    
+    h2 {
+      padding-top: 70px;
+      padding-left: 70px;
+      text-transform: uppercase;
+      font-size: 29pt;
+      font-weight: normal;
+    }
+
+    .dots {
+      padding-top: 50px;
+      padding-left: 70px;
+
+      @include media-query-lt(1024px) {
+        padding-top: 0px;
+        padding-bottom: 50px;
+      }
+    }
+
+    button {
+      border-radius: 14px;
+      width: 14px;
+      height: 14px;
+      border: 0;
+      margin: 5px;
+
+      background-color: #777;
+
+      &.active {
+        background-color: #555;
+      }
+    }
+
+    .testimonials-siema {
+      margin: 10px 70px;
+
+      div > p {
+        font-weight: 100;
+      }
+
+      .author {
+        display: flex;
+
+        img {
+          align-self: center;
+          margin: 10px;
+        }
+
+        p {
+          font-size: 16pt;
+          font-weight: normal;
+
+          em {
+            display: block;
+            font-size: 12pt;
+          }
+        }
+      }
+    }
+  }
+}
+
+#services {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  li {
+    flex: 0 1 33%;
+    padding: 50px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+h2#meet-the-agents {
+  text-align: center;
+  color: #fff;
+}
+
+div.agents {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  align-content: start;
+
+  div.agent {
+    flex: 1 1 50%;
+    margin: 16px;
+
+    @include media-query(840px) {
+      img {
+        width: 100%;
+      }
+    }
+
+    h3, p {
+      max-width: 500px;
+      color: #fff;
+    }
+  }
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #view-all {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 24pt;
+    text-decoration: none;
+    text-shadow: rgba(0,0,0,0.5) 1px 1px 4px;
+    text-align: center;
+
+    span.viewbox {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    span.button {
+      display: block;
+      color: #fff;
+      background-color: $main;
+      border-radius: 32px;
+      font-size: 14pt;
+      text-transform: initial;
+      text-shadow: none;
+      padding: 10px 20px;
+
+      &::after {
+        content: '  >'
+      }
+    }
+  }
+}
+
+@include media-query($on-palm) {
+
+  .map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #view-all {
+      background-color: #fff;
+      padding: 20px;
+      text-transform: uppercase;
+      color: #000;
+      font-size: 24pt;
+      text-decoration: none;
+      text-shadow: rgba(0,0,0,0.5) 1px 1px 4px;
+      text-align: center;
+
+      span.viewbox {
+        display: none;
+      }
+      
+      span.button {
+        display: block;
+        color: #fff;
+        background-color: $main;
+        border-radius: 32px;
+        font-size: 14pt;
+        text-transform: initial;
+        text-shadow: none;
+        padding: 10px 20px;
+
+        &::after {
+          content: '  >'
+        }
+      }
+    }
+  }
+
+  #services {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+
+    li {
+      flex: initial;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  div.agents {
+    display: block;
+    padding: 10px;
+
+    div.agent {
+      flex: initial;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.links-siema {
+  width: 100%;
+  background-color: #fff;
+
+  div {
+    text-align: center;
+  }
+}
