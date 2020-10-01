@@ -11,7 +11,7 @@ h1#nest-services {
 }
 
 #testimonials {
-  background: url('/assets/img/testimonials/background.jpg') fixed;
+  background: url("/assets/img/testimonials/background.jpg") fixed;
   background-position: 50% 0px;
   background-size: cover;
 
@@ -27,7 +27,7 @@ h1#nest-services {
       height: 570px;
       overflow: hidden;
     }
-    
+
     h2 {
       padding-top: 70px;
       padding-left: 70px;
@@ -128,13 +128,26 @@ div.agents {
     flex: 1 1 50%;
     margin: 16px;
 
-    @include media-query(840px) {
+    @include media-query-lt(570px) {
+      width: 50vw;
+
       img {
-        width: 100%;
+        max-width: 100%;
+        max-height: 300px;
       }
     }
 
-    h3, p {
+    @include media-query(570px) {
+      width: 100%;
+
+      img {
+        max-width: 100%;
+        max-height: 300px;
+      }
+    }
+
+    h3,
+    p {
       max-width: 500px;
       color: #fff;
     }
@@ -154,14 +167,14 @@ div.agents {
     color: #000;
     font-size: 24pt;
     text-decoration: none;
-    text-shadow: rgba(0,0,0,0.5) 1px 1px 4px;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
     text-align: center;
 
     span.viewbox {
       display: block;
       margin-bottom: 10px;
     }
-    
+
     span.button {
       display: block;
       color: #fff;
@@ -173,14 +186,13 @@ div.agents {
       padding: 10px 20px;
 
       &::after {
-        content: '  >'
+        content: "  >";
       }
     }
   }
 }
 
 @include media-query($on-palm) {
-
   .map {
     display: flex;
     align-items: center;
@@ -193,13 +205,13 @@ div.agents {
       color: #000;
       font-size: 24pt;
       text-decoration: none;
-      text-shadow: rgba(0,0,0,0.5) 1px 1px 4px;
+      text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
       text-align: center;
 
       span.viewbox {
         display: none;
       }
-      
+
       span.button {
         display: block;
         color: #fff;
@@ -211,7 +223,7 @@ div.agents {
         padding: 10px 20px;
 
         &::after {
-          content: '  >'
+          content: "  >";
         }
       }
     }
@@ -247,7 +259,7 @@ div.agents {
     }
 
     img {
-      width: 100%;
+      width: 50vw;
     }
   }
 }

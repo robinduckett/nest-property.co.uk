@@ -5,64 +5,11 @@ layout: home
 <script src="/assets/js/vendor/siema.min.js"></script>
 
 <div class="map">
-  <a id="view-all" href="https://www.zoopla.co.uk/to-rent/branch/nest-lettings-and-property-management-llanishen-108377/" target="_blank" rel="noopener noreferrer">
+  <a id="view-all" href="https://www.facebook.com/nestlettingsltd" target="_blank" rel="noopener noreferrer">
     <span class="viewbox">View All Nest Letting Properties</span>
     <span class="button">Search for NEST Property</span>
   </a>
 </div>
-
-<div class="links-siema">
-  <div>
-    <a href="https://www.facebook.com/nestlettingsltd" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/links/facebook.png" />
-    </a>
-  </div>
-    <div>
-    <a href="" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/links/mydeposits.png" />
-    </a>
-  </div>
-    <div>
-    <a href="" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/links/ukala.png" />
-    </a>
-  </div>
-    <div>
-    <a href="" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/links/propertyredressscheme.png" />
-    </a>
-  </div>
-    <div>
-    <a href="" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/links/rentsmartwales.png" />
-    </a>
-  </div>
-    <div>
-    <a href="https://www.instagram.com/nestlettings/" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/links/instagram.png" />
-    </a>
-  </div>
-    <div>
-    <a href="https://www.zoopla.co.uk/to-rent/branch/nest-lettings-and-property-management-llanishen-108377" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/links/zoopla.png" />
-    </a>
-  </div>
-</div>
-<script>
-  const linkCarousel = new Siema({
-    selector: '.links-siema',
-    loop: true,
-    duration: 500,
-    perPage: {
-      375: 3,
-      600: 3,
-      768: 4,
-      1024: 5,
-    },
-  });
-
-setInterval(() => linkCarousel.next(), 3000);
-</script>
 
 # Nest Services
 
@@ -136,7 +83,7 @@ Let our services exceed your expectations
       </div>
       <div>
         <p>
-          <em>"Looking forward to working more with the girls over the upcoming months, pleased with the service and how Louise was able to give me further ideas on how to increase rents which had never been suggested by my previous agent"</em>
+          <em>"Looking forward to working more with the girls over the upcoming months, pleased with the service and how Lindsey was able to give me further ideas on how to increase rents which had never been suggested by my previous agent"</em>
           <div class="author">
             <img src="/assets/img/testimonials/mark.png" width="70" height="70" />
             <p>
@@ -192,17 +139,83 @@ Let our services exceed your expectations
   setInterval(() => testimonialCarousel.next(), 5000);
 </script>
 
+<div class="links-siema">
+  <div>
+    <a href="https://www.airbnb.com/" target="_blank" rel="noopener noreferrer">
+      <img width="85" src="/assets/img/links/airbnb.png" />
+    </a>
+  </div>
+  <div>
+    <a href="https://www.facebook.com/nestlettingsltd" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/links/facebook.png" />
+    </a>
+  </div>
+  <div>
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/links/mydeposits.png" />
+    </a>
+  </div>
+  <div>
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/links/ukala.png" />
+    </a>
+  </div>
+    <div>
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/links/propertyredressscheme.png" />
+    </a>
+  </div>
+  <div>
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/links/rentsmartwales.png" />
+    </a>
+  </div>
+  <div>
+    <a href="https://www.instagram.com/nestlettings/" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/links/instagram.png" />
+    </a>
+  </div>
+  <!-- <div>
+    <a href="https://www.zoopla.co.uk/to-rent/branch/nest-lettings-and-property-management-llanishen-108377" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/links/zoopla.png" />
+    </a>
+  </div> -->
+</div>
+
+<script>
+  const linkCarousel = new Siema({
+    selector: '.links-siema',
+    loop: true,
+    duration: 500,
+    perPage: {
+      375: 3,
+      600: 3,
+      768: 4,
+      1024: 5,
+    },
+  });
+
+setInterval(() => linkCarousel.next(), 3000);
+</script>
+
 ## Meet The Agents
 
 <div class="agents">
   <div class="agent">
-    <img src="/assets/img/louise.jpg"><br>
-    <h3>Louise Scott</h3>
-    <p>Louise’s zest for life is undeniable, she believes in Great Service and Good Value for Money, and is passionate that we all receive this in our day to day life. Her 20 + years of experience in Sales and Service has allowed her to gain many skills, which she has already put into practise. Her no nonsense approach and problem solving nature will confirm your properties are in safe hands.</p>
+    <img src="/assets/img/lindsey.jpg"><br>
+    <h3>Lindsey Fryer - CEO</h3>
+    <p>The driving force behind our ambition to provide the very best service and solutions for our landlords and tenants.<br /><br />
+    Lindsey has the benefit of a lifetime spent in the property business. From a young age she has been consistently involved in her family business and has invested her wealth of knowledge and experience into Nest lettings and property maintenance Ltd. Lindsey has comprehensive knowledge of every aspect of the property business, from finding tenants to renovation management and everything in between.<br />
+    She is a valuable asset for anyone to have overseeing their property portfolio.
+    </p>
   </div>
   <div class="agent">
-    <img src="/assets/img/lindsey.jpg"><br>
-    <h3>Lindsey Fryer</h3>
-    <p>Lindsey hails from property management and property maintenance lineage so property runs in her blood. hence Lindsey’s role within the business is to look after all of the Tenants needs on a day to day basis and managing Nest’s 24/7 dedicated Tenant line Lindsey thrives from being busy and organisation is her strong point. Resourceful, ambitious and chatty, Lindsey loves to help others. She can also sign Makaton.</p>
+    <img src="/assets/img/beth.jpg"><br>
+    <h3>Beth Evans - CEO</h3>
+    <p>Beth has a colourful portfolio of management, sales, networking and marketing experience<br /><br />
+    With a wealth of understanding in current social security procedures and the economical implications to our landlords, Beth's role within the company is to offer what no other letting agency offers.<br /><br />
+    <strong>Tenant support</strong><br /><br />
+    Beth maintains contact with tenants and offers practical support in applying for benefits and grants. If a tenant should become unemployed or have to claim benefits for any reason, Beth will minimise any potential disruption of payments.
+    </p>
   </div>
 </div>
